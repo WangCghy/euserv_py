@@ -3,6 +3,8 @@ name: EUserv Daily Renew
 on:
   schedule:
     - cron: '37 12 * * *' # 北京时间 20:37（原为 20:00，仅把分钟避开整点拥堵，频率不变）
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
